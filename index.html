@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0  ">
     <link rel="stylesheet" type="text/css" href="./style.css">
-    <link rel="stylesheet" type="text/css" href="./projects-sec.css">
     <link rel="stylesheet" type="text/css" href="./education.css">
     <link rel="stylesheet" type="style/css" href="./slider.css">
-    <link rel="stylesheet" type="style.css" href="./about-sec.css">
+    <link rel="stylesheet" type="style/css" href="./about-sec.css">
+    <!--icon plugins-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"rel="stylesheet">
       <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
       <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
@@ -17,7 +17,7 @@
 
 </head>
 <body>
-    <div class="scroll_contain">
+    <!--function -->
         <div class="topnav">
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -29,7 +29,8 @@
         
         <section id="home">
                 <h1 class="h1-headings">Jarryd's portfolio website</h1>
-                <div id="but-container"><a href="#"><button>Dive in</button></a></div>
+                <div id="but-container"><a href="#about"><button>Dive in</button></a></div>
+                    <!--defines unique postion along x axis-->
                     <div class="wave" id="wave1" style="--i:1;"></div>
                     <div class="wave" id="wave2" style="--i:2;"></div>
                     <div class="wave" id="wave3" style="--i:3;"></div>
@@ -39,10 +40,10 @@
         <section id="about">
             <div class="about-sec">
                 <h1>Hi!</h1>
-                
-                <p> Im jarryd a fullstack sfotware engineer from perth western Australia!.
-                Im passionate about all thing tech development, im especially interested in the fields of Robotics and sustianability scroll
-                down to see a timeline of my journey so far!
+                <!--basic introductory section-->
+                <p> I'm Jarryd, a fullstack software engineer located in Perth, Western Australia!
+                 I enjoy all things tech development, with a passion for Robotics as well as Sustainability.
+                  Scroll down to see a timeline of my journey so far.
             
                 </p>
             
@@ -55,7 +56,8 @@
             let wave2 = document.getElementById('wave2');
             let wave3 = document.getElementById('wave3');
             let wave4 = document.getElementById('wave4');
-
+            //listens for scroll event and moves postion of 
+            //wave to create movement
             window.addEventListener('scroll', function(){
                 let value = window.scrollY;
 
@@ -66,108 +68,115 @@
             })
         </script>
 
-    
+        <!--timeline function-->
         <div class="timeline">
             <ul>
                 <li>
                     <div class="content-timeln">
                         <h3>Completed engineering diploma</h3>
-                        <p>at this stage i completed my engineering diploma at curtin college i am keenly interested in the Mechanical engineering.</p>
+                        <p> Upon completion of my Engineering diploma at Curtin College, I found a passion for the mechanical engineering sector.</p>
                     </div>
                     <div class="time">
-                        <h4>january 2018</h4>
+                        <h4>January '18</h4>
                     </div>
                 </li>
                 <li>
                     <div class="content-timeln">
-                        <h3>started learning coding</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est maxime qui, incidunt repellat eligendi beatae modi veritatis
-                        illum iste. Omnis beatae voluptatibus quas fugit laudantium, a expedita distinctio? Distinctio, vero.</p>
+                        <h3>Began Mechanical Engineering BSc</h3>
+                        <p> My interest in Mechnical engineering field led me to begin my Bachelors Degree at Curtin University. This seemed like a great pathway into a career in Aerospace.</p>
                     </div>
                     <div class="time">
-                        <h4>december 2019</h4>
+                        <h4> January '19</h4>
                     </div>
                 </li>
                 <li>
                     <div class="content-timeln">
-                        <h3>enrolled in mechanical engineering (honors)</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est maxime qui, incidunt repellat eligendi beatae modi veritatis
-                        illum iste. Omnis beatae voluptatibus quas fugit laudantium, a expedita distinctio? Distinctio, vero.</p>
+                        <h3> Immersed in Coding</h3>
+                        <p>From late 2020, I began to educate myself about the world of coding. My brain loves to know how things work, and coding is a way to explore this interest. Upon discovering that Spaceships are guided to the moon by code, I knew this was something I had to be involved in. </p>
                     </div>
                     <div class="time">
-                        <h4> january 2019</h4>
+                        <h4>December '20</h4>
                     </div>
                 </li>
                 <li>
                     <div class="content-timeln">
-                        <h3>completed academy Xi!</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est maxime qui, incidunt repellat eligendi beatae modi veritatis
-                        illum iste. Omnis beatae voluptatibus quas fugit laudantium, a expedita distinctio? Distinctio, vero.</p>
+                        <h3>Completed Academy Xi! (hopefully)</h3>
+                        <p> Software is a huge component in many industries globally, and will be a pivotal tool to further my career as an Engineer.     </p>
                     </div>
                     <div class="time">
-                        <h4>novemeber 2021</h4>
+                        <h4>November '21</h4>
                     </div>
                 </li>
+                <!--allows for floating to be stageered
+                by clearing the previous float-->
                 <div style="clear: both;"></div>
             </ul>
         </div>
-
+            <div>
+                <h1 class="lang-sec">Previous Projects</h1>
+            </div>
+            <!--accordian func for portfolio projects-->
         <section id="accord">
-            
             <div class="accord-container">
                 <div class="accord">
                     <div class="accord-proj" id="proj1">
                         <a class="accord-link" href="#proj1">
-                            portfolio website
+                            Portfolio Website
+                            <div class=elements>
+                                <span>JavaScipt</span>
+                                 <span>HTML</span>
+                                  <span>CSS</span>  
+                            </div>
                             <ion-icon class="add" name="add-outline"></ion-icon>
                             <ion-icon class="remove" name="remove-circle-outline"></ion-icon>
                         </a>
-
+                        <!--state of func opeon opening-->
                         <div class="expansion">
-                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                            <img src="./pictures/Untitled-5.png" alt="website image">
                         </div>
                     </div>
                     <div class="accord-proj" id="proj2">
                         <a class="accord-link" href="#proj2">
-                            Tasman cosmetics
+                            To be announced 2
                             <ion-icon class="add" name="add-outline"></ion-icon>
                             <ion-icon class="remove" name="remove-circle-outline"></ion-icon>
                         </a>
 
                         <div class="expansion">
-                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, rerum doloribus. Accusantium id eligendi perspiciatis. Enim eveniet error ratione nam dicta in aliquid debitis, fugit vitae commodi deleniti libero ab.</p>
                         </div>
                     </div>
 
                     <div class="accord-proj" id="proj3">
                         <a class="accord-link" href="#proj3">
-                            project3
+                            To be announced 3
                             <ion-icon class="add" name="add-outline"></ion-icon>
                             <ion-icon class="remove" name="remove-circle-outline"></ion-icon>
                         </a>
 
                         <div class="expansion">
-                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Est aspernatur reiciendis voluptas quos asperiores, distinctio quibusdam ut laudantium praesentium dolores sit quod, minus quo, fuga ducimus ipsam! Minus, quae officiis.</p>
                         </div>
                     </div>
 
-                    <div class="accord-proj" id="proj4">
+                    <div class="accord-proj" id="proj3">
                         <a class="accord-link" href="#proj4">
-                            project4
+                            To be announced 4
                             <ion-icon class="add" name="add-outline"></ion-icon>
                             <ion-icon class="remove" name="remove-circle-outline"></ion-icon>
                         </a>
 
                         <div class="expansion">
-                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                            <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam neque deserunt, eius dignissimos velit, ratione laboriosam repellendus architecto ut suscipit numquam repellat et consectetur beatae est, nihil nulla quibusdam maxime. consectetur.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        <!--skills section -->
         <section class="skills">
             <h1 class="lang-sec">Skills</h1>
-            <h3 class="skills_outline">heres a list of some of the tools and resources i have learnt and used over my journey so far</h3>
+            <h3 class="skills_outline"> Throughout my journey, I have utilised a range of resources throughout my work.</h3>
             <div class="skills-container">
             <div class="lan-skill">
                 <span class="material-icons-outlined md-24">integration_instructions</span>
@@ -201,7 +210,10 @@
             </ul>
         </div>
         
-            </div>
-    </div>
+        </div>
+        <!--footer section-->
+        <footer>
+        </footer>
+    
 </body>
 </html>
