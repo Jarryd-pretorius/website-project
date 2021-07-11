@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <style>
+        body {
+            background-color: purple;
+        }
+    </style>
+    <div class="form_container">
+        <form action="action_page">
+            <div class="form">
+                <label for="name" class="form-label"> Name</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Your name..">
+            </div>
+            <div class="form"> 
+                <label for="lname" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="lname" name="lastname" placeholder="Your last name..">
+          </div>
+            <div class="form">
+                <label for="subject" class="form-label">Subject</label>
+                <textarea id="subject" class="form-control" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            
+            </div>
+          <input id="btn-form" type="submit" value="send message!">
+      
+        </form>
+    </div>
+
+</body>
+</html>
